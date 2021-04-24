@@ -58,7 +58,8 @@ class MetricExtractor(object):
         if repo_path:
             self.__repo_path = repo_path
         if os.path.exists(self.__repo_path):
-            shutil.rmtree(self.__repo_path)
+            # shutil.rmtree(self.__repo_path)
+            os.system('rmdir /S /Q "{}"'.format(self.__repo_path))
         self.repo = git.Repo.clone_from(repo_url, self.__repo_path, no_checkout=True)
 
     def checkout(self, commit: str):
@@ -67,7 +68,7 @@ class MetricExtractor(object):
     def analyze(self, metric_plugin: MetricExtractorPlugin):
         metric_plugin.tool_analyse(self.__repo_path)
 
-    def __del__(self):
+    def remove_repo(self):
         if not os.path.exists(self.__repo_path):
             return
-        shutil.rmtree(self.__repo_path)
+        os.system('rmdir /S /Q "{}"'.format(self.__repo_path))

@@ -1,3 +1,4 @@
+import os
 import unittest
 
 from git import Repo
@@ -7,21 +8,22 @@ from RepoMetricExtractor import get_commit_2_methods_metric_2, MetricExtractor
 
 class MyTestCase(unittest.TestCase):
 
-    # def test_repo_loading(self):
-    #     repo_path = 'C:\Repos\maven'
-    #     commits = ["778f044e"]
-    #     get_commit_2_methods_metric(repo_path, commits, None)
+    repo_path = "C:\\temp\\tmp_repo"
 
     def test_repo_checkout_commit(self):
         repo_url = "https://github.com/apache/maven.git"
-        repo_path = "C:\\temp\\tmp_repo"
-        # get_commit_2_methods_metric_2(repo_url, ["778f044e"])
-        extractor = MetricExtractor(repo_url, repo_path)
-        repo = Repo(repo_path)
+        extractor = MetricExtractor(repo_url, self.repo_path)
+        repo = Repo(self.repo_path)
         self.assertTrue(not repo.bare)
-        extractor.checkout("778f044e")
+        commit_id = "778f044e"
+        extractor.checkout(commit_id)
         commit = repo.head.commit
-        t = 1
+        self.assertTrue(commit_id in str(commit))
+        extractor.remove_repo()
+
+    @classmethod
+    def tearDownClass(cls):
+        pass
 
 
 if __name__ == '__main__':
