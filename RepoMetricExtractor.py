@@ -68,6 +68,9 @@ class MetricExtractor(object):
     def analyze(self, metric_plugin: MetricExtractorPlugin):
         metric_plugin.tool_analyse(self.__repo_path)
 
+    # def generate_metrics(self, commit: str, metric_plugin: MetricRawFileExtractorPlugin):
+    #     metric_plugin.tool_generate_metric(commit, self.__repo_path)
+
     def remove_repo(self):
         if not os.path.exists(self.__repo_path):
             return
