@@ -35,20 +35,21 @@ class MetricRawFileExtractorPlugin(ABC):
 
 class JavaCallGraphMetricFileExtractorPlugin(MetricRawFileExtractorPlugin):
 
-    def __init__(self, tool_exe: str):
+    def __init__(self, tool_exe: str, jar_regex: str = '(.*jar$)'):
         super(JavaCallGraphMetricFileExtractorPlugin, self).__init__(tool_exe)
+        self.jar_regex = jar_regex
         # cmd "java -jar javacg-0.1-SNAPSHOT-static.jar C:\temp\tmp_repo\maven-ant-tasks-2.1.1.jar > myoutput.txt"
 
-    def tool_generate_metric(self, java_exe: str, commit_id: str, repo_root_folder: str, out_file_path: str, *args) -> None:
-        regex = re.compile('(.*jar$)')
+    def tool_generate_metric(self, java_exe: str, commit_id: str, jar_folder: str, out_file_path: str, *args) -> None:
+        regex = re.compile(self.jar_regex)
         jars = []
-        only_files = [f for f in listdir(repo_root_folder) if isfile(join(repo_root_folder, f))]
+        only_files = [f for f in listdir(jar_folder) if isfile(join(jar_folder, f))]
         for file in only_files:
             if regex.match(file):
-                jars.append(join(repo_root_folder, file))
+                jars.append(join(jar_folder, file))
 
-        assert len(jars) == 1
         try:
+            assert len(jars) == 1
             import subprocess
             subprocess.check_output([java_exe, '-jar', self._tool_exe, jars[0], '>', out_file_path], shell=True)
         except Exception as e:

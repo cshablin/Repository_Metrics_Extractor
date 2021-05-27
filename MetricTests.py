@@ -128,6 +128,24 @@ class MyTestCase(unittest.TestCase):
 
         print("commits_unsuccessful", commits_unsuccessful)
 
+    def test_wicket_repo_generate_all_raw_metric(self):
+        # folder_with_commits_files = "C:\\My_Stuff\\BGU\\לימודים\\2021\\איתור תקלות\\פרויקט\\maven_data\\matrices"
+        folder_with_commits_files = "C:\\My_Stuff\\BGU\\לימודים\\2021\\איתור תקלות\\פרויקט\\wicket_data\\matrices"
+        files = listdir(folder_with_commits_files)
+        commits = []
+        for file in files:
+            commits.append(file.split('_')[1])
+
+        tool = "C:\\Java_analysis\\java-callgraph-master\\target\\javacg-0.1-SNAPSHOT-static.jar"
+        java_exe = 'C:\\Program Files\\Java\\jdk1.8.0_291\\bin\\java.exe'
+        wicket_jars_folder = 'C:\\temp\\wicket_jars'
+        for commit_id in commits:
+            commit_jar_folder = wicket_jars_folder + path.sep + commit_id
+            raw_tool_file_extractor = JavaCallGraphMetricFileExtractorPlugin(tool, jar_regex='(.*SNAPSHOT.jar$)')
+            out_file = "{}.txt".format(commit_id)
+            out_path = self.raw_metric_files_folder + os.path.sep + out_file
+            raw_tool_file_extractor.tool_generate_metric(java_exe, commit_id, commit_jar_folder, out_path)
+
 
     @classmethod
     def tearDownClass(cls):
