@@ -1,0 +1,4842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-06-04T07:13:07.682Z"
+        schema="xsd/skeleton.xsd"
+        version="1.0-SNAPSHOT"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>MMAC</title>
+   <description>
+        Method-Method through Attributes Cohesion (MMAC).
+        The MMAC is the average cohesion of all pairs of methods.
+        In simple words this metric shows how many methods have the
+        same parameters or return types. When class has some number
+        of methods and most of them operate the same parameters it
+        assumes better. It looks like class contains overloaded
+        methods. Preferably when class has only one method with
+        parameters and/or return type and it assumes that class
+        do only one thing. Value of MMAC metric is better for these
+        one classes.
+        Metric value is in interval [0, 1]. Value closer to 1 is better.
+      </description>
+   <app element="false" id="C:\temp\tmp_repo_maven_2">
+      <package element="false" id="org.apache.maven.cli">
+         <class color="red" element="false" id="CLIManager" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ConsoleDownloadMonitor"
+                value="0.3333">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MavenCli" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="CLIRequestUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BatchModeDownloadMonitor"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="AbstractConsoleDownloadMonitor"
+                value="0.0833">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="CLIReportingUtils"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.embedder.execution">
+         <class color="green" element="false" id="SettingsAdapter" value="NaN">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="true"
+                id="DefaultMavenExecutionRequestPopulator"
+                value="0.6667">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.plugin.lifecycle">
+         <class color="red" element="true" id="Phase" value="0.0111">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="LifecycleConfiguration"
+                value="0.0222">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Lifecycle" value="0.0238">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Execution" value="0.0357">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.lifecycle">
+         <class color="red"
+                element="false"
+                id="ClassLoaderXmlBindingLoader"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="DefaultLifecycleExecutor$TaskSegment"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LifecycleExecutionException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LifecycleLoaderException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LifecycleSpecificationException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NoSuchPhaseException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MojoBindingUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultLifecycleExecutor"
+                value="0.0333">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="TaskValidationResult"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LifecycleException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NoSuchLifecycleException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="LifecycleUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.settings.validation">
+         <class color="red"
+                element="true"
+                id="SettingsValidationResult"
+                value="0.0333">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultSettingsValidator"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.toolchain.java">
+         <class color="red"
+                element="true"
+                id="DefaultJavaToolChain"
+                value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="DefaultJavaToolchainFactory"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.handler.manager">
+         <class color="red"
+                element="false"
+                id="DefaultArtifactHandlerManager"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.embedder">
+         <class color="red"
+                element="true"
+                id="DefaultConfiguration"
+                value="0.0011">
+            <vars>
+               <var id="k">32</var>
+               <var id="l">13</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="AbstractMavenEmbedderLogger"
+                value="0.0604">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultConfigurationValidationResult"
+                value="0.0174">
+            <vars>
+               <var id="k">18</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="yellow"
+                element="true"
+                id="MavenEmbedderFileLogger"
+                value="0.5536">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MavenEmbedderSecurityManager"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PluginLookupException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SummaryPluginDescriptor"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MavenEmbedderLoggerManager"
+                value="0.125">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MavenEmbedder" value="0.0048">
+            <vars>
+               <var id="k">33</var>
+               <var id="l">13</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="PlexusLoggerAdapter"
+                value="0.1267">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MavenEmbedderException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="true"
+                id="MavenEmbedderConsoleLogger"
+                value="0.6667">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.listeners">
+         <class color="green"
+                element="false"
+                id="BuildExtensionListener$BuildExtension"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultMavenModelEventProcessor"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="BuildExtensionListener"
+                value="0.05">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.profiles.build">
+         <class color="red"
+                element="true"
+                id="DefaultProfileAdvisor"
+                value="0.1429">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.mercury">
+         <class color="green"
+                element="false"
+                id="MavenDomainModelFactory"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PomProcessorException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MavenDependencyProcessor"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="MavenDomainModel" value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project">
+         <class color="green" element="false" id="ModelUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MavenProjectBuildingResult"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InvalidProjectVersionException"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultProjectBuilderConfiguration"
+                value="0.0044">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="yellow"
+                element="true"
+                id="DefaultMavenProjectBuilder$ProjectCache"
+                value="0.5">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ProjectUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectBuildingException"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MavenProject" value="0.0007">
+            <vars>
+               <var id="k">151</var>
+               <var id="l">27</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InvalidProjectModelException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultMavenProjectHelper$AttachedArtifact"
+                value="0.0119">
+            <vars>
+               <var id="k">21</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MissingRepositoryElementException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DuplicateArtifactAttachmentException"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultMavenProjectHelper"
+                value="0.3867">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultMavenProjectBuilder"
+                value="0.0655">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">8</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.transform">
+         <class color="green"
+                element="false"
+                id="DefaultClasspathTransformation"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ReleaseArtifactTransformation"
+                value="0.2">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultClasspathTransformation$ClasspathGraphVisitor"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SnapshotTransformation"
+                value="0.12">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="AbstractVersionTransformation"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MetadataGraphTransformationException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="LatestArtifactTransformation"
+                value="0.2">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultArtifactTransformationManager"
+                value="0.3333">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="ClasspathContainer" value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project.path">
+         <class color="yellow"
+                element="true"
+                id="DefaultPathTranslator"
+                value="0.4444">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.monitor.event">
+         <class color="yellow"
+                element="true"
+                id="DeprecationEventDispatcher"
+                value="0.5">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="true"
+                id="AbstractEmbedderLifecycleMonitor"
+                value="0.7">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="true"
+                id="AbstractSelectiveEventMonitor"
+                value="0.6889">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultEventMonitor"
+                value="1">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MavenEvents" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultEventDispatcher"
+                value="0.075">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.plugin">
+         <class color="green"
+                element="false"
+                id="AbstractMojoExecutionException"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InvalidPluginException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MojoExecutionException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MojoFailureException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultPluginManagerSupport"
+                value="0.1293">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="AbstractMojo" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PluginConfigurationException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PluginParameterException"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultPluginManager"
+                value="0.2143">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">10</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultPluginRepository"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DebugConfigurationListener"
+                value="1">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PluginNotFoundException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PluginExecutionException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PluginManagerException"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PluginContainerException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MavenPluginCollector"
+                value="0.0119">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="MojoExecution" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultPluginManager$PluginRealmAction"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="MavenPluginDiscoverer"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultPluginMappingManager"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PluginParameterExpressionEvaluator"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project.builder">
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin$Goals"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$CiManagement$Notifiers$Notifier"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DependencyManagement$Dependencies$Dependency"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DependencyManagement$Dependencies$Dependency$Exclusions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin$Executions$Execution"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DependencyManagement$Dependencies$Dependency$Exclusions$Exclusion"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Developers$Developer"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DistributionManagement$Site"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DistributionManagement"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin$Executions$Execution$Goals"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$TestResources"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Resources"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$CiManagement"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Modules"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$CiManagement$Notifiers"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Dependencies$Dependency"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Contributors"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Dependencies$Dependency$Exclusions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Dependencies"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin$Dependencies"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DependencyManagement"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Licenses"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Dependencies$Dependency$Exclusions$Exclusion"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DependencyManagement$Dependencies"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin$Dependencies$Dependency$Exclusions$Exclusion"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin$Dependencies$Dependency$Exclusions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$MailingLists$MailingList"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin$Executions$Execution"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin$Executions$Execution$Goals"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$PluginRepositories$PluginRepository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Dependencies"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Dependencies$Dependency$Exclusions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$TestResources$TestResource"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DependencyManagement$Dependencies$Dependency$Exclusions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Activation$Os"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DistributionManagement$Site"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$PluginRepositories"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$PluginRepositories$PluginRepository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Reporting"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Reporting$Plugins$Plugin"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Reporting"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Repositories$Repository$Snapshots"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Reporting$Plugins$Plugin$ReportSets"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin$Executions$Execution"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ProjectUri$Scm" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin$Dependencies"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DependencyManagement$Dependencies$Dependency$Exclusions$Exclusion"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DistributionManagement$Relocation"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Reporting$Plugins$Plugin$ReportSets$ReportSet"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Repositories$Repository$Snapshots"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin$Dependencies$Dependency$Exclusions$Exclusion"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin$Executions$Execution$Goals"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DistributionManagement$Repository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Repositories"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Repositories$Repository$Releases"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Reporting$Plugins"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Dependencies$Dependency$Exclusions$Exclusion"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin$Dependencies$Dependency$Exclusions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Activation"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DistributionManagement$Relocation"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Resources$Resource"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Reporting$Plugins$Plugin"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Repositories"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$PluginRepositories$PluginRepository$Releases"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DependencyManagement$Dependencies$Dependency"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$TestResources"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin$Dependencies$Dependency"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Prerequisites"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Repositories$Repository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Reporting$Plugins"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Repositories$Repository$Releases"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Reporting$Plugins$Plugin$ReportSets$ReportSet"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Reporting$Plugins$Plugin$ReportSets"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Repositories$Repository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$PluginRepositories$PluginRepository$Snapshots"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DistributionManagement$SnapshotRepository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DependencyManagement$Dependencies"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin$Goals"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DistributionManagement"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Dependencies$Dependency"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Resources"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$Plugins$Plugin$Executions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$DependencyManagement"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin$Executions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin$Dependencies$Dependency"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement$Plugins$Plugin$Goals"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Activation$File"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$PluginRepositories$PluginRepository$Releases"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$MailingLists"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Build$PluginManagement"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin$Dependencies$Dependency$Exclusions$Exclusion"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$PluginRepositories$PluginRepository$Snapshots"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Profiles$Profile$Activation$Property"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Organization"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Licenses$License"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$IssueManagement"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$TestResources$TestResource"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DistributionManagement$SnapshotRepository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Resources$Resource"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$DistributionManagement$Repository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$PluginRepositories"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Parent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin$Executions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Contributors$Contributor"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Developers"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$TestResources$TestResource$Includes"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin$Dependencies$Dependency$Exclusions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin$Dependencies"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin$Goals"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin$Executions$Execution$Goals"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin$Executions$Execution"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin$Dependencies$Dependency$Exclusions$Exclusion"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin$Dependencies$Dependency$Exclusions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin$Dependencies$Dependency"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin$Dependencies"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ProjectUri$Build" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ProjectUri" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PluginReportSetIdModelContainerFactory$PluginReportSetIdModelContainer"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PluginReportSetIdModelContainerFactory"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Filters"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Extensions$Extension"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultPomArtifactResolver"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PomClassicDomainModelFactory"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PluginMixin" value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="AlwaysJoinModelContainerFactory$Anon_ModelContainer"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ArtifactModelContainerFactory"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="AlwaysJoinModelContainerFactory"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Extensions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PomClassicTransformer"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="PomClassicDomainModel"
+                value="0.0011">
+            <vars>
+               <var id="k">18</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Interpolator" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="IdModelContainerFactory$IdModelContainer"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ExclusionModelContainerFactory"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ArtifactModelContainerFactory$ArtifactModelContainer"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$Plugins$Plugin$Dependencies$Dependency"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin$Executions"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectUri$Build$PluginManagement$Plugins$Plugin"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PluginExecutionIdModelContainerFactory$PluginExecutionIdModelContainer"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PluginExecutionIdModelContainerFactory"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="IdModelContainerFactory"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ExclusionModelContainerFactory$ExclusionModelContainer"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="PomTransformer" value="0.3">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.plugin.version">
+         <class color="green"
+                element="false"
+                id="PluginVersionResolutionException"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PluginVersionNotFoundException"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultPluginVersionManager"
+                value="1">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.profiles">
+         <class color="green"
+                element="false"
+                id="AlwaysOnActivation"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationOS" value="0.2222">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationProperty" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationFile" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Repository" value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Activation" value="0.003">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ProfilesRoot" value="0.037">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultProfileManager"
+                value="0.0114">
+            <vars>
+               <var id="k">15</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="RepositoryPolicy" value="0.0536">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultMavenProfilesBuilder"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="RepositoryBase" value="0.0909">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfilesConversionUtils"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Profile" value="0.0147">
+            <vars>
+               <var id="k">17</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.reactor">
+         <class color="green"
+                element="false"
+                id="MissingModuleException"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MavenExecutionException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.plugin.logging">
+         <class color="red" element="true" id="SystemStreamLog" value="0.2333">
+            <vars>
+               <var id="k">16</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.realm">
+         <class color="red"
+                element="true"
+                id="RealmScanningUtils$DummyDiscovererManager"
+                value="0.0238">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="RealmUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RealmScanningUtils"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RealmManagementException"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultMavenRealmManager"
+                value="0.0889">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.monitor.logging">
+         <class color="red" element="true" id="DefaultLog" value="0.2333">
+            <vars>
+               <var id="k">16</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project.artifact">
+         <class color="green"
+                element="false"
+                id="InvalidDependencyVersionException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ActiveProjectArtifact"
+                value="0.0036">
+            <vars>
+               <var id="k">49</var>
+               <var id="l">10</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MavenMetadataSource$ProjectRelocation"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ProjectArtifactMetadata"
+                value="0.0179">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MavenMetadataSource"
+                value="0.375">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.repository.layout">
+         <class color="red"
+                element="true"
+                id="DefaultRepositoryLayout"
+                value="0.1111">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="FlatRepositoryLayout"
+                value="0.1111">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="LegacyRepositoryLayout"
+                value="0.1111">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.factory">
+         <class color="yellow"
+                element="true"
+                id="DefaultArtifactFactory"
+                value="0.4141">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.resolver">
+         <class color="green"
+                element="false"
+                id="AbstractArtifactResolutionException"
+                value="NaN">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="WarningResolutionListener"
+                value="0.3394">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ArtifactResolutionResult"
+                value="0.0029">
+            <vars>
+               <var id="k">25</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+         <class color="yellow"
+                element="true"
+                id="DefaultArtifactResolver"
+                value="0.45">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">8</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="CyclicDependencyException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ArtifactNotFoundException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="UnresolvedArtifacts"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ResolutionNode" value="0.0024">
+            <vars>
+               <var id="k">15</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ArtifactResolutionRequest"
+                value="0.0014">
+            <vars>
+               <var id="k">26</var>
+               <var id="l">9</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DebugResolutionListener"
+                value="0.337">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ArtifactResolutionException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultArtifactCollector"
+                value="0.2444">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">9</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MultipleArtifactsNotFoundException"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.plugin.descriptor">
+         <class color="green"
+                element="false"
+                id="DuplicateMojoDescriptorException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InvalidParameterException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DuplicateParameterException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InvalidPluginDescriptorException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Requirement" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MojoDescriptor" value="0.0073">
+            <vars>
+               <var id="k">49</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Parameter" value="0.0264">
+            <vars>
+               <var id="k">27</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="PluginDescriptor" value="0.0085">
+            <vars>
+               <var id="k">33</var>
+               <var id="l">8</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="PluginDescriptorBuilder"
+                value="0.125">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.manager">
+         <class color="green"
+                element="false"
+                id="CredentialsDataSourceException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="WagonConfigurationException"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ChecksumFailedException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="CredentialsChangeRequest"
+                value="0.0333">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultWagonManager"
+                value="0.0157">
+            <vars>
+               <var id="k">34</var>
+               <var id="l">17</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultUpdateCheckManager"
+                value="0.2133">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.lifecycle.binding">
+         <class color="red"
+                element="false"
+                id="LegacyLifecycleMappingParser"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultMojoBindingFactory"
+                value="0.375">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="BindingUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Lifecycle" value="0.0333">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultLifecycleBindingManager"
+                value="0.1122">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.resolver.conflict">
+         <class color="green"
+                element="false"
+                id="NearestConflictResolver"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultGraphConflictResolutionPolicy"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ConflictResolverNotFoundException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NewestConflictResolver"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultGraphConflictResolver"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OldestConflictResolver"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="FarthestConflictResolver"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="GraphConflictResolutionException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultConflictResolver"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="DefaultConflictResolverFactory"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.plugin.loader">
+         <class color="green"
+                element="false"
+                id="PluginLoaderException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="DefaultPluginPrefixLoader"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultPluginLoader"
+                value="0.2167">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.model.io.xpp3">
+         <class color="green" element="false" id="MavenXpp3Writer" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MavenXpp3Reader" value="0.2234">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.lifecycle.mapping">
+         <class color="green"
+                element="false"
+                id="DefaultLifecycleMapping"
+                value="1">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Lifecycle" value="0.0333">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.lifecycle.statemgmt">
+         <class color="green"
+                element="false"
+                id="ResolveLateBoundPluginMojo"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="StartForkedExecutionMojo"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ClearForkedContextMojo"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="StateManagementUtils"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="EndForkedExecutionMojo"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.resolver.filter">
+         <class color="green"
+                element="false"
+                id="ScopeArtifactFilter"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ExcludesArtifactFilter"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="TypeArtifactFilter"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ExclusionSetFilter"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InversionArtifactFilter"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="IncludesArtifactFilter"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="AndArtifactFilter" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.model">
+         <class color="red" element="true" id="Profile" value="0.0182">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Plugin" value="0.0051">
+            <vars>
+               <var id="k">26</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Notifier" value="0.0294">
+            <vars>
+               <var id="k">17</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="CiManagement" value="0.0296">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Exclusion" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DependencyManagement"
+                value="0.0222">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationOS" value="0.2222">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="License" value="0.2222">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="PluginContainer" value="0.0119">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Relocation" value="0.2222">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PluginConfiguration" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ReportPlugin" value="0.0131">
+            <vars>
+               <var id="k">21</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PluginManagement" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="PluginExecution" value="0.1111">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Organization" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Parent" value="0.1818">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="PatternSet" value="0.1">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Extension" value="0.0667">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ModelBase" value="0.0052">
+            <vars>
+               <var id="k">29</var>
+               <var id="l">9</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="IssueManagement" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MailingList" value="0.1167">
+            <vars>
+               <var id="k">16</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="FileSet" value="0.1">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Model" value="0.0029">
+            <vars>
+               <var id="k">55</var>
+               <var id="l">14</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="DeploymentRepository" value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationProperty" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ConfigurationContainer"
+                value="0.0179">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Developer" value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DistributionManagement"
+                value="0.011">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Contributor" value="0.0714">
+            <vars>
+               <var id="k">21</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Dependency" value="0.0263">
+            <vars>
+               <var id="k">24</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationFile" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Activation" value="0.003">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Build" value="0.0444">
+            <vars>
+               <var id="k">16</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BuildBase" value="0.0421">
+            <vars>
+               <var id="k">20</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Reporting" value="0.0076">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Repository" value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="RepositoryPolicy" value="0.0536">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Site" value="0.2143">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="RepositoryBase" value="0.0909">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ReportSet" value="0.0366">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Scm" value="0.2222">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Prerequisites" value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Resource" value="0.0333">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false"
+               id="org.apache.maven.artifact.repository.metadata.io.xpp3">
+         <class color="green"
+                element="false"
+                id="MetadataXpp3Writer"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MetadataXpp3Reader"
+                value="0.2234">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.repository.metadata">
+         <class color="red"
+                element="true"
+                id="GroupRepositoryMetadata"
+                value="0.0111">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ArtifactRepositoryMetadata"
+                value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RepositoryMetadataInstallationException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RepositoryMetadataDeploymentException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RepositoryMetadataStoreException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RepositoryMetadataReadException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SnapshotArtifactRepositoryMetadata"
+                value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Snapshot" value="0.0119">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Versioning" value="0.0312">
+            <vars>
+               <var id="k">16</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="AbstractRepositoryMetadata"
+                value="0.0278">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RepositoryMetadataResolutionException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Plugin" value="0.2143">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Metadata" value="0.0133">
+            <vars>
+               <var id="k">15</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultRepositoryMetadataManager"
+                value="0.3333">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact">
+         <class color="green"
+                element="false"
+                id="InvalidRepositoryException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="UnknownRepositoryLayoutException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DependencyResolutionRequiredException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="DefaultArtifact" value="0.004">
+            <vars>
+               <var id="k">51</var>
+               <var id="l">10</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ArtifactStatus" value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InvalidArtifactRTException"
+                value="NaN">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ArtifactUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.handler">
+         <class color="green"
+                element="false"
+                id="DefaultArtifactHandler"
+                value="NaN">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.toolchain">
+         <class color="red"
+                element="true"
+                id="DefaultToolchainManager"
+                value="0.0833">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MisconfiguredToolchainException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RequirementMatcherFactory$ExactMatcher"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RequirementMatcherFactory$VersionMatcher"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RequirementMatcherFactory"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="DefaultToolchain" value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven">
+         <class color="red" element="true" id="DefaultMaven" value="0.08">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectBuildFailureException"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="DefaultArtifactFilterManager"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AggregatedBuildFailureException"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProjectCycleException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NoGoalsSpecifiedException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BuildFailureException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultMavenTools"
+                value="0.0192">
+            <vars>
+               <var id="k">13</var>
+               <var id="l">10</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InvalidTaskException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.lifecycle.plan">
+         <class color="green" element="false" id="BuildPlanUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LifecyclePlannerException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BuildPlan" value="0.0138">
+            <vars>
+               <var id="k">23</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultBuildPlanner"
+                value="0.1333">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.settings">
+         <class color="red" element="true" id="RepositoryPolicy" value="0.0536">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Profile" value="0.0152">
+            <vars>
+               <var id="k">15</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="RepositoryBase" value="0.0909">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationOS" value="0.2222">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="TrackableBase" value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="SettingsUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SettingsConfigurationException"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Server" value="0.0875">
+            <vars>
+               <var id="k">16</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Settings" value="0.0069">
+            <vars>
+               <var id="k">43</var>
+               <var id="l">8</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="RuntimeInfo" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Repository" value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Proxy" value="0.0417">
+            <vars>
+               <var id="k">16</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultMavenSettingsBuilder"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Mirror" value="0.1667">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="IdentifiableBase" value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationProperty" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ActivationFile" value="0.2">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Activation" value="0.003">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.errors">
+         <class color="green"
+                element="false"
+                id="ProjectReporterManager"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="CoreErrorTips" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ProjectErrorTips" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultProjectErrorReporter"
+                value="0.0241">
+            <vars>
+               <var id="k">25</var>
+               <var id="l">25</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="CoreReporterManager"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultCoreErrorReporter"
+                value="0.0206">
+            <vars>
+               <var id="k">37</var>
+               <var id="l">45</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project.inheritance">
+         <class color="red"
+                element="true"
+                id="DefaultModelInheritanceAssembler"
+                value="0.0833">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.profiles.injection">
+         <class color="red"
+                element="false"
+                id="DefaultProfileInjector"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.resolver.metadata">
+         <class color="green"
+                element="false"
+                id="MetadataResolutionException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MetadataTreeNode" value="0.0202">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MetadataGraph" value="0.0199">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MetadataRetrievalException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="MetadataResolutionRequest"
+                value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MetadataResolutionResult"
+                value="0.0268">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MetadataGraphEdge"
+                value="0.0033">
+            <vars>
+               <var id="k">18</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="MetadataResolution" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MetadataGraphVertex"
+                value="0.0056">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="DefaultMetadataResolver"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ArtifactMetadata" value="0.0205">
+            <vars>
+               <var id="k">34</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.reporting">
+         <class color="green"
+                element="false"
+                id="MavenReportException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.profiles.io.xpp3">
+         <class color="green"
+                element="false"
+                id="ProfilesXpp3Writer"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ProfilesXpp3Reader"
+                value="0.2234">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project.builder.impl">
+         <class color="red" element="false" id="DefaultImportModel" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultProjectBuilder"
+                value="0.0321">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">13</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.versioning">
+         <class color="red"
+                element="false"
+                id="ComparableVersion$ListItem"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OverConstrainedVersionException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="VersionRange" value="0.003">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Restriction" value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ManagedVersionMap"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InvalidVersionSpecificationException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultArtifactVersion"
+                value="0.0111">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ComparableVersion$StringItem"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ComparableVersion$IntegerItem"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ComparableVersion" value="0.05">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project.validation">
+         <class color="red"
+                element="true"
+                id="ModelValidationResult"
+                value="0.0333">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultModelValidator"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.settings.io.xpp3">
+         <class color="green"
+                element="false"
+                id="SettingsXpp3Writer"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SettingsXpp3Reader"
+                value="0.2234">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.plugin.lifecycle.io.xpp3">
+         <class color="green"
+                element="false"
+                id="LifecycleMappingsXpp3Writer"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="LifecycleMappingsXpp3Reader"
+                value="0.2234">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.lifecycle.model">
+         <class color="red" element="true" id="MojoBinding" value="0.0242">
+            <vars>
+               <var id="k">25</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LifecycleBinding" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="LifecycleBindings"
+                value="0.0045">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="CleanBinding" value="0.0227">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="SiteBinding" value="0.033">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Phase" value="0.0139">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BuildBinding" value="0.0954">
+            <vars>
+               <var id="k">52</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project.builder.profile">
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$Activation$Os"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$Activation$File"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$Activation$Property"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$PluginRepositories$PluginRepository$Snapshots"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$Repositories$Repository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$PluginRepositories$PluginRepository$Releases"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$PluginRepositories$PluginRepository"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$Repositories$Repository$Snapshots"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ByDefaultMatcher" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$Repositories"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="PropertyMatcher" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$Repositories$Repository$Releases"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ProfileContext" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$PluginRepositories"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile$Activation"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ProfileUri" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileUri$Profiles$Profile"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="JdkMatcher" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OperatingSystemMatcher"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="FileMatcher" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.installer">
+         <class color="green"
+                element="false"
+                id="ArtifactInstallationException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="yellow"
+                element="true"
+                id="DefaultArtifactInstaller"
+                value="0.5">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.repository">
+         <class color="red"
+                element="true"
+                id="DefaultArtifactRepositoryFactory"
+                value="0.1714">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultArtifactRepository"
+                value="0.0036">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ArtifactRepositoryPolicy"
+                value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.execution">
+         <class color="red" element="true" id="ReactorManager" value="0.0705">
+            <vars>
+               <var id="k">15</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ReactorManager$ProjectSorter"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ApplicationInformation"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultMavenExecutionResult"
+                value="0.0016">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MavenSession" value="0.0066">
+            <vars>
+               <var id="k">34</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DuplicateProjectException"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultRuntimeInformation"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="BuildSuccess" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="BuildFailure" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultMavenExecutionRequest"
+                value="0.0023">
+            <vars>
+               <var id="k">88</var>
+               <var id="l">16</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.profiles.activation">
+         <class color="red"
+                element="true"
+                id="JdkPrefixProfileActivator"
+                value="0.2222">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DetectedProfileActivator"
+                value="0.1111">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultProfileActivationContext"
+                value="0.0571">
+            <vars>
+               <var id="k">15</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="CustomActivator" value="0.1111">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OperatingSystemProfileActivator"
+                value="1">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="FileProfileActivator"
+                value="0.2222">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AlwaysOnProfileActivator"
+                value="1">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ProfileActivationException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SystemPropertyProfileActivator"
+                value="1">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="CustomActivatorExpressionEvaluator"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.toolchain.model">
+         <class color="red"
+                element="true"
+                id="PersistedToolchains"
+                value="0.0222">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ToolchainModel" value="0.0357">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.project.builder.rules">
+         <class color="green" element="false" id="DependencyRule" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ExecutionRule" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.metadata">
+         <class color="green"
+                element="false"
+                id="AbstractArtifactMetadata"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ResolutionGroup" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ArtifactMetadataRetrievalException"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.artifact.deployer">
+         <class color="yellow"
+                element="true"
+                id="DefaultArtifactDeployer"
+                value="0.5">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ArtifactDeploymentException"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.toolchain.model.io.xpp3">
+         <class color="red"
+                element="true"
+                id="MavenToolchainsXpp3Reader"
+                value="0.2234">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MavenToolchainsXpp3Writer"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.apache.maven.lifecycle.model.io.xpp3">
+         <class color="green"
+                element="false"
+                id="LifecycleBindingsXpp3Writer"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="LifecycleBindingsXpp3Reader"
+                value="0.2234">
+            <vars>
+               <var id="k">19</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
+   <min>0.0007</min>
+   <max>0.7</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 560, steps: 32; all: 191; min: 0.0007; max: 0.7; delta: 0.021853125-->
+      <bar color="red" x="0">60</bar>
+      <!--step: 0, left: 0.0007, right: 0.022553125-->
+      <bar color="red" x="0.03125">28</bar>
+      <!--step: 1, left: 0.022553125, right: 0.04440625-->
+      <bar color="red" x="0.0625">8</bar>
+      <!--step: 2, left: 0.04440625, right: 0.06625937-->
+      <bar color="red" x="0.09375">9</bar>
+      <!--step: 3, left: 0.06625937, right: 0.088112496-->
+      <bar color="red" x="0.125">7</bar>
+      <!--step: 4, left: 0.088112496, right: 0.10996562-->
+      <bar color="red" x="0.15625">13</bar>
+      <!--step: 5, left: 0.10996562, right: 0.13181874-->
+      <bar color="red" x="0.1875">2</bar>
+      <!--step: 6, left: 0.13181874, right: 0.15367188-->
+      <bar color="red" x="0.21875">8</bar>
+      <!--step: 7, left: 0.15367188, right: 0.175525-->
+      <bar color="red" x="0.25">1</bar>
+      <!--step: 8, left: 0.175525, right: 0.19737811-->
+      <bar color="red" x="0.28125">16</bar>
+      <!--step: 9, left: 0.19737811, right: 0.21923125-->
+      <bar color="red" x="0.3125">17</bar>
+      <!--step: 10, left: 0.21923125, right: 0.24108437-->
+      <bar color="red" x="0.34375">1</bar>
+      <!--step: 11, left: 0.24108437, right: 0.2629375-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0.2629375, right: 0.2847906-->
+      <bar color="red" x="0.40625">1</bar>
+      <!--step: 13, left: 0.2847906, right: 0.30664375-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.30664375, right: 0.32849687-->
+      <bar color="red" x="0.46875">5</bar>
+      <!--step: 15, left: 0.32849687, right: 0.35035-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.35035, right: 0.3722031-->
+      <bar color="red" x="0.53125">3</bar>
+      <!--step: 17, left: 0.3722031, right: 0.39405623-->
+      <bar color="yellow" x="0.5625">1</bar>
+      <!--step: 18, left: 0.39405623, right: 0.41590938-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.41590938, right: 0.4377625-->
+      <bar color="yellow" x="0.625">2</bar>
+      <!--step: 20, left: 0.4377625, right: 0.45961562-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.45961562, right: 0.48146874-->
+      <bar color="yellow" x="0.6875">4</bar>
+      <!--step: 22, left: 0.48146874, right: 0.5033219-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0.5033219, right: 0.525175-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.525175, right: 0.5470281-->
+      <bar color="yellow" x="0.78125">1</bar>
+      <!--step: 25, left: 0.5470281, right: 0.5688812-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.5688812, right: 0.59073436-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.59073436, right: 0.6125875-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.6125875, right: 0.6344406-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0.6344406, right: 0.65629375-->
+      <bar color="green" x="0.9375">2</bar>
+      <!--step: 30, left: 0.65629375, right: 0.67814684-->
+      <bar color="green" x="0.96875">2</bar>
+      <!--step: 31, left: 0.67814684, right: 0.7-->
+   </bars>
+   <statistics>
+      <total>560</total>
+      <elements>191</elements>
+      <mean>0.1237916230366493</mean>
+      <sigma>0.14693988988265574</sigma>
+      <variance>0.021591331238727</variance>
+      <defects>0.1099476439790576</defects>
+   </statistics>
+</metric>

@@ -54,3 +54,27 @@ class JavaCallGraphMetricFileExtractorPlugin(MetricRawFileExtractorPlugin):
             subprocess.check_output([java_exe, '-jar', self._tool_exe, jars[0], '>', out_file_path], shell=True)
         except Exception as e:
             print(e)
+
+
+class JPeekMetricFileExtractorPlugin(MetricRawFileExtractorPlugin):
+    def __init__(self, tool_exe: str):
+        super().__init__(tool_exe)
+        # cmd " java -jar jpeek-jar-with-dependencies.jar --sources . --target ./jpeek"
+
+    def tool_generate_metric(self, java_exe: str, commit_id: str, repo_root_folder: str, out_path: str) :
+        regex = re.compile('(.*jar$)')
+        jars = []
+        only_files = [f for f in listdir(repo_root_folder) if isfile(join(repo_root_folder, f))]
+        for file in only_files:
+            if regex.match(file):
+                jars.append(join(repo_root_folder, file))
+        print(len(jars))
+        print(repo_root_folder)
+        print(jars)
+        assert len(jars) == 1
+        try:
+
+            print('run command: '+' '.join([java_exe, '-jar', self._tool_exe, '--sources', repo_root_folder ,'--target', out_path]))
+            subprocess.check_output([java_exe, '-jar', self._tool_exe, '--sources', repo_root_folder ,'--target', out_path], shell=True)
+        except Exception as e:
+            print(e)
